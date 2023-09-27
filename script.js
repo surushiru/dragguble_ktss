@@ -1,5 +1,22 @@
 var chooseElement;
 const move = function (element) {
+  function mobile() {
+    try {
+      document.createEvent("TouchEvent");
+      return true;
+    } catch (e) {
+      return false;
+    }
+  }
+  if (mobile()) {
+    console.log("是手機");
+    document.body.innerHTML = "このサイトはパソコンウェブのみです、パソコンでご覧ください。";
+    
+  } else {
+    
+    console.log("是電腦");
+  }
+
   const elements = document.querySelectorAll(".element");
 
   elements.forEach((element) => {
