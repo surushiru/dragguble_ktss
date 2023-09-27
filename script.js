@@ -9,17 +9,16 @@ const move = function (element) {
     }
   }
   if (mobile()) {
-    console.log("是手機");
-    document.body.innerHTML = "このサイトはパソコンウェブのみです、パソコンでご覧ください。";
-    
+    // mobile
+    document.body.innerHTML =
+      "このサイトはPCブラウザのみです、パソコンでご覧ください。";
   } else {
-    
-    console.log("是電腦");
+    // PC
   }
 
   const elements = document.querySelectorAll(".element");
 
-  elements.forEach((element) => {
+  elements.forEach(element => {
     element.addEventListener("mousedown", () => {
       element.style.position = "absolute";
       chooseElement = element;
@@ -27,8 +26,8 @@ const move = function (element) {
       document.onmousemove = (e) => {
         var x = e.pageX;
         var y = e.pageY;
-        chooseElement.style.left = x - 60 + "px";
-        chooseElement.style.top = y - 60 + "px";
+        chooseElement.style.left = x -60 + "px";
+        chooseElement.style.top = y -60 + "px";
         // console.log(chooseElement);
       };
     });

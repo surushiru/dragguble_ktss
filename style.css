@@ -12,12 +12,10 @@
     background-image: url(./img/kotaro.png);
     width: 106px;
     background-size: cover;
-    /* background-color: #ba7474; */
 }
 
 .sasuke {
     width: 92px;
     background-image: url(./img/sasuke.png);
     background-size: cover;
-    /* background-color: #6e6e6e; */
 }
