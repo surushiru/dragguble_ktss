@@ -1,7 +1,18 @@
-.element {
-    height: 200px;
+.container {
+    display: flex;
+    justify-content: flex-start;
 }
 
-.kotaro {}
+.element {
+    height: 200px;
+    margin: 5px;
+   
+}
 
-.sasuke {}
+.kotaro {
+    background-color: #ba7474;
+}
+
+.sasuke {
+    background-color: #6e6e6e;
+}
