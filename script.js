@@ -10,9 +10,9 @@ const move = function (element) {
       document.onmousemove = (e) => {
         var x = e.pageX;
         var y = e.pageY;
-        chooseElement.style.left = x-60 + "px";
-        chooseElement.style.top = y-60 + "px";
-        console.log(chooseElement);
+        chooseElement.style.left = x - 60 + "px";
+        chooseElement.style.top = y - 60 + "px";
+        // console.log(chooseElement);
       };
     });
   });
