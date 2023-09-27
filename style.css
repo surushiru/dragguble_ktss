@@ -1,12 +1,8 @@
-.container {
-    display: flex;
-    justify-content: flex-start;
-}
-
 .element {
-    height: 200px;
+    height: 120px;
     margin: 5px;
-   
+    user-select: none;
+
 }
 
 .kotaro {
